@@ -1,0 +1,91 @@
+extends ./layout
+block content
+
+    .section-container
+        .container
+            .row
+                .col-sm-8.col-sm-offset-2.section-container-spacer
+                    .text-center
+                        h1.h2 02 : Projects
+                        p
+                            | Nulla facilisi. Vivamus vestibulum, elit in scelerisque
+                            | ultricies, nisl nunc pulvinar ligula, id sodales arcu sapien in
+                            | nisi. Quisque libero enim, mattis non augue posuere, venenatis
+                            | dapibus urna.
+                .col-md-12
+                    #myCarousel.carousel.slide.projects-carousel
+                        // Carousel items
+                        .carousel-inner
+                            .item.active
+                                .row
+                                    .col-sm-4
+                                        a.black-image-project-hover(href='./work' title='')
+                                            img.img-responsive(src='/images/work01-hover.jpg' alt='')
+                                        .card-container.card-container-lg
+                                            h4 001/006
+                                            h3 Fringilla sit amet
+                                            p
+                                                | Nulla facilisi. Vivamus vestibulum, elit in
+                                                | scelerisque ultricies.
+                                            a.btn.btn-default(href='./work' title='') Discover
+                                    .col-sm-4
+                                        a.black-image-project-hover(href='./work' title='')
+                                            img.img-responsive(src='/images/work02-hover.jpg' alt='')
+                                        .card-container.card-container-lg
+                                            h4 002/006
+                                            h3 Calculator Web App
+                                            p
+                                                | freeCodeCamp Javacript Calculator App
+                                                | Built with Nodejs, Express, and MaterializeCss
+                                            a.btn.btn-default(href='./work' title='') Discover
+                                    .col-sm-4
+                                        a.black-image-project-hover(href='./work' title='')
+                                            img.img-responsive(src='/images/work03-hover.jpg' alt='')
+                                        .card-container.card-container-lg
+                                            h4 003/006
+                                            h3 Vivamus vestibulum
+                                            p
+                                                | Fusce sed hendrerit augue, a rhoncus velit. In non
+                                                | lorem mattis, tempor sem sit amet.
+                                            a.btn.btn-default(href='./work' title='') Discover
+                                // /row
+                                // /item
+                                .item
+                                    .row
+                                        .col-sm-4
+                                            a.black-image-project-hover(href='./work')
+                                                img.img-responsive(src='/images/work02-hover.jpg' alt='Image')
+                                            .card-container
+                                                h4 004/006
+                                                h3 Calculator Web App
+                                                p
+                                                    | freeCodeCamp Javacript Calculator App
+                                                    | Built with Nodejs, Express, and MaterializeCss
+                                                a.btn.btn-default(href='./work') Discover
+                                        .col-sm-4
+                                            a.black-image-project-hover(href='./work')
+                                                img.img-responsive(src='/images/work01-hover.jpg' alt='Image')
+                                            .card-container
+                                                h4 005/006
+                                                h3 Fringilla sit amet
+                                                p
+                                                    | Nulla facilisi. Vivamus vestibulum, elit in
+                                                    | scelerisque ultricies.
+                                                a.btn.btn-default(href='./work') Discover
+                                        .col-sm-4
+                                            a.black-image-project-hover(href='./work')
+                                                img.img-responsive(src='/images/work03-hover.jpg' alt='Image')
+                                            .card-container
+                                                h4 006/006
+                                                h3 Vivamus vestibulum
+                                                p
+                                                    | Fusce sed hendrerit augue, a rhoncus velit. In non
+                                                    | lorem mattis, tempor sem sit amet.
+                                                a.btn.btn-default(href='./work') Discover
+                                    // /row
+                                    // /item
+                                    // /carousel-inner
+                                    a.left.carousel-control(href='#myCarousel' data-slide='prev') &lsaquo;
+                                    a.right.carousel-control(href='#myCarousel' data-slide='next') &rsaquo;
+                    // /myCarousel
+    include ./footer

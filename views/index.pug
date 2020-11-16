@@ -1,0 +1,26 @@
+extends layout
+
+block content
+
+  // Add your site or app content here
+  .hero-full-container.background-image-container.white-text-container(style="background-image:\
+  url('/images/space.jpg')")
+    .container
+      .row
+        .col-xs-12
+          .hero-full-wrapper
+            .text-content
+              h1
+                | Hello,
+                br
+                span#typed-strings
+                  span I&apos;m Clickbait
+                  span Python Expert
+                  span Working as a Freelancer
+                span#typed
+  script.
+    document.addEventListener("DOMContentLoaded", function (event) {
+    type();
+    movingBackgroundImage();
+    })
+
